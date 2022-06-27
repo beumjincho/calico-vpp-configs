@@ -28,7 +28,7 @@ kubectl apply -f https://github.com/beumjincho/calico-vpp-configs/blob/main/cali
 ```
 
 ### 4. Add nodes to the cluster
-Don't forget to edit the cluster name, region and other fields as appropriate for your cluster.
+> :warning: **Don't forget to edit the cluster name, region and other fields as appropriate for your cluster.**
 ```shell
 cat <<EOF | eksctl create nodegroup -f -
 apiVersion: eksctl.io/v1alpha5
